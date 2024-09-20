@@ -1,0 +1,14 @@
+.text-justify {
+    text-align: justify;
+}
+
+.card-img-top {
+    filter: grayscale();
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-text {
+    margin-bottom: 0;
+}
