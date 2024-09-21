@@ -4,36 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore</title>
+    <title>The Void</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col">
-                <h1>The Void</h1>
-                <p class="form-text">Version 0.01</p>
-                <p>Welcome to The Void. This is my little explore project that I've been thinking about for a while as a fun thing to code. To explore costs nothing and you may do so as often as you please. At the beginning, there will be very few encounters, but with time, more will appear as The Void grows deeper. Be careful not to tread too deeply. Who knows what you may find lurking within.</p>
-                <p>Refreshing the page will mysteriously find you right where you began at the mouth of the forest.</p>
+    <main>
+        <div class="container my-md-5 my-0 p-md-0 p-4">
+            <div class="row">
+                <div class="col-12">
+                    <h1>The Void</h1>
+                    <p class="form-text">Version 0.1</p>
+                    <p>Welcome to The Void. This is my little explore project that I've been thinking about for a while as a fun thing to code. To explore costs nothing and you may do so as often as you please. At the beginning, there will be very few encounters, but with time, more will appear as The Void grows deeper. Be careful not to tread too deeply. Who knows what you may find lurking within.</p>
+                    <p>Refreshing the page will mysteriously find you right where you began at the mouth of the forest.</p>
+                </div>
             </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-4 col-12">
-                <div class="card my-3" id="explore">
-                    <img src="./img/spooky-forest.jpg" class="card-img-top" alt="dark forest by Rosie Sun on Unsplash" id="exploreImg">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between">
-                            <p class="card-text text-justify" id="exploreText">The ground is soft beneath your feet. A feeling stirs in your chest. Something here beckons you...</p>
-                            <div class="text-center ms-3"><button class="btn btn-secondary" id="exploreBtn" onclick="explore()">Step</button></div>
+            <div class="row justify-content-center">
+                <div class="col-xl-4 col-lg-5 col-md-6 col-12">
+                    <div class="card my-3" id="explore">
+                        <img src="./img/spooky-forest.jpg" class="card-img-top" alt="dark forest by Rosie Sun on Unsplash" id="exploreImg">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <p class="card-text" id="exploreText">The ground is soft beneath your feet. A feeling stirs in your chest. Something here beckons you...</p>
+                                <div class="text-center ms-3"><button class="btn btn-secondary" id="exploreBtn" onclick="explore()">Walk</button></div>
+                            </div>
                         </div>
                     </div>
+                    <p>Distance: <span id="stepCount"></span></p>
                 </div>
-                <p>Distance: <span id="stepCount"></span></p>
             </div>
         </div>
-    </div>
+    </main>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/style.js"></script>
 </body>
